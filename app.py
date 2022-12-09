@@ -12,7 +12,7 @@ def main():
     token = flask.request.args.get('token')
     zone = flask.request.args.get('zone')
     record = flask.request.args.get('record')
-    ipv4 = flask.request.args.get('ipv4')
+    ipv4 = flask.request.args.get('ip')
     ipv6 = flask.request.args.get('ipv6')
     cf = CloudFlare.CloudFlare(token=token)
 
