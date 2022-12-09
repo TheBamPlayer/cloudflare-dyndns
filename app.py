@@ -52,7 +52,7 @@ def main():
     except CloudFlare.exceptions.CloudFlareAPIError as e:
         return flask.jsonify({'status': 'error', 'message': str(e)}), 500
 
-    return flask.jsonify({'status': 'success', 'message': 'Update successful.'}), 200
+    return flask.jsonify({'OK'}), 200
 
 
 @app.route('/healthz', methods=['GET'])
